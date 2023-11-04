@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./homeslider.component.css']
 })
 export class HomesliderComponent {
+    protected readonly screen = screen;
 }
 
