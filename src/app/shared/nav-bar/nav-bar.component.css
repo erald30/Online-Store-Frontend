@@ -1,0 +1,28 @@
+.navbar-nav .nav-link {
+  font-size: 10px;
+ padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+.navbar {
+  background: linear-gradient(to right, #45607e, #202D3D, #45607e);
+  height: 30px;
+  border-bottom-style: solid;
+}
+
+
+
+.navbar-nav {
+  padding-right: 10px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .navbar-nav {
+    padding-right: 0px;
+  }
+}
