@@ -21,6 +21,7 @@ import { HomesliderComponent } from './pages/homepage/homeslider/homeslider.comp
 import {CarouselModule} from "ngx-bootstrap/carousel";
 import {FormsModule} from "@angular/forms";
 import { NewproductsComponent } from './pages/homepage/newproducts/newproducts.component';
+import { MostsoldproductsComponent } from './pages/homepage/mostsoldproducts/mostsoldproducts.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { NewproductsComponent } from './pages/homepage/newproducts/newproducts.c
     ProductComponent,
     HomesliderComponent,
     NewproductsComponent,
+    MostsoldproductsComponent,
   ],
   imports: [
     BrowserModule,
