@@ -20,6 +20,7 @@ import {RouterLink, RouterOutlet} from "@angular/router";
 import { HomesliderComponent } from './pages/homepage/homeslider/homeslider.component';
 import {CarouselModule} from "ngx-bootstrap/carousel";
 import {FormsModule} from "@angular/forms";
+import { NewproductsComponent } from './pages/homepage/newproducts/newproducts.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import {FormsModule} from "@angular/forms";
     FooterComponent,
     ProductComponent,
     HomesliderComponent,
+    NewproductsComponent,
   ],
   imports: [
     BrowserModule,
