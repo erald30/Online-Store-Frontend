@@ -1,26 +1,32 @@
 
 .card {
+  max-width: 110%;
   width: 18rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 0px  #000000;
+  border-radius: 1000px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 20px;
-  background-color: #f0f0f0;
+  background-color: transparent;
+  height: 120px;
+  transform: translate(35%, -12%);
+
 }
 
-/* Style the card image */
+
 .card-img-top {
   max-width: 100%;
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+
 }
 
-/* Style the card body */
+
 .card-body {
   padding: 10px;
   background-color: #fff;
+
 }
 
 
@@ -32,10 +38,12 @@
 
 .card-body p {
   text-align: center;
+
 }
 
 
 .card-body ul, .card-body ol {
   list-style: none;
   padding: 0;
+
 }

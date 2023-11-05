@@ -12,7 +12,6 @@
   background: linear-gradient(to right, #45607e, #202D3D, #45607e);
   height: 30px;
   border-bottom: 0.5px solid white;
-
   padding-right: 70px;
 }
 
@@ -36,18 +35,21 @@
 .dropdown {
   position: relative;
   display: inline-block;
+
 }
 
 
 .dropdown-content {
   display: none;
   position: absolute;
-  font-style: oblique;
-  font-size: 12px;
+  font-style: normal;
+  font-size: 13px;
   background-color: #a1c2f1;
-  border: 1px solid #a48c64;
+  border: 1px solid #07234f;
   font-weight: bold;
   z-index: 1;
+  padding-right: 40px;
+  padding-left: 40px ;
 }
 
 
@@ -55,17 +57,26 @@
   display: block;
   padding: 10px 10px;
   text-decoration: none;
-  color: #333;
+  color: #000000;
+
+
 }
 
 
 .dropdown-content a:hover {
-  background-color: #f0f0f0;
+  /*background-color: #a6bce7;*/
+  transform: translate(-15%);
+
+
 }
 
 
 .dropdown:hover .dropdown-content {
   display: block;
+  position: absolute;
+  transform: translate(-12%);
+
+
 }
 
 
