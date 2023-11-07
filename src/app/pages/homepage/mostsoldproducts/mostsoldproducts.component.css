@@ -1,3 +1,10 @@
+/*div{*/
+
+/*  */
+/*  border-radius: 40px;*/
+
+/*}*/
+
 .most-sold-products{
   height: 100vh;
   background-color: #546e8d;
@@ -25,8 +32,12 @@ h1{
   height: 80%;
   width: 95%;
   box-shadow: 5px 5px 20px rgba(0, 0, 0.5, 0.8);
-  border-radius: 20px;
+  border-radius: 70px 0;
+  margin-bottom: 40px;
 
 }
+
+
+
 
 

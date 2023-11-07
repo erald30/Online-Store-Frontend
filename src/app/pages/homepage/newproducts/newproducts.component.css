@@ -25,7 +25,8 @@ h1{
   height: 80%;
   width: 95%;
   box-shadow: 5px 5px 20px rgba(0, 0, 0.5, 0.8);
-  border-radius: 20px;
+  border-radius: 0 70px;
+  margin-top: 40px;
 
 }
 
