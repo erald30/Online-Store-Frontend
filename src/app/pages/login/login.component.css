@@ -8,3 +8,29 @@
 .right-background {
   background-color: #001f47;
 }
+
+.w-60{
+  background-color: #617f9f;
+  box-shadow: -10px -10px 15px rgb(97, 114, 141), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.w-40{
+  box-shadow: -10px -10px 15px rgb(65, 83, 114), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.43), 0 6px 12px rgba(0, 0, 0, 0.43);
+  transition: transform .5s;
+}
+.input:hover{
+  transform: scale(1.05) ;
+}
+.btn-outline-dark{
+  --bs-btn-hover-bg: #415372FF;
+}
