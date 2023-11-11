@@ -14,12 +14,7 @@
           <div class="dropdown">
             <button class="dropbtn buton">Categories</button>
             <div class="dropdown-content">
-              <a routerLink="/products/mobile">Mobile</a>
-              <a href="#">TV</a>
-              <a href="#">Laptop</a>
-              <a href="#">Computer</a>
-              <a href="#">Accessories</a>
-              <a href="#">Home electronics</a>
+              <a *ngFor="let category of categories" [routerLink]="'/products/' + category.title">{{category?.title}}</a>
             </div>
           </div>
         </div>

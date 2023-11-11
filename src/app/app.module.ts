@@ -22,6 +22,7 @@ import {CarouselModule} from "ngx-bootstrap/carousel";
 import {FormsModule} from "@angular/forms";
 import { NewproductsComponent } from './pages/homepage/newproducts/newproducts.component';
 import { MostsoldproductsComponent } from './pages/homepage/mostsoldproducts/mostsoldproducts.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { MostsoldproductsComponent } from './pages/homepage/mostsoldproducts/mos
     RouterOutlet,
     CarouselModule,
     FormsModule,
-    RouterLink
+    RouterLink,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
