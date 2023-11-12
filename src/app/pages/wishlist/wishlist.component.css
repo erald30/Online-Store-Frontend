@@ -17,6 +17,7 @@
 }
 .table-wishlist table {
   width: 100%;
+  padding: 0;
 }
 .table-wishlist thead {
   border-bottom: 1px solid #e5e5e5;
@@ -150,4 +151,8 @@
 .trash-icon {
   font-size: 20px;
   color: #212529;
+}
+.row>* {
+  padding-left: 0;
+  padding-right: 0;
 }
