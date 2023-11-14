@@ -131,3 +131,24 @@
 
 
 }
+
+
+ .scrollbar-separator::-webkit-scrollbar {
+   height: 10px;
+   width: 10px;
+   margin-left: 10px;
+   justify-content: space-around;
+
+ }
+
+.scrollbar-separator::-webkit-scrollbar-thumb {
+  background-color: #7f8a98;
+  border-radius: 5px;
+}
+
+.scrollbar-separator::-webkit-scrollbar-track {
+  background-color: #a6a9b0;
+  border-radius: 5px;
+}
+
+
