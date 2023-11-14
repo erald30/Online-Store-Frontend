@@ -1,74 +1,98 @@
+<section class="d-flex" style="background-color: #829fc4;">
+  <div class="container h-100 py-5">
+    <div class="columnd-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card shopping-cart" style="border-radius: 30px;">
+          <div class="card-body text-black" style="background: #dde1e8; border-radius: 30px;
+            box-shadow: -10px -10px 15px rgb(89,136,152), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+          ">
 
-<div class="cart-wrap">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12  rounded-3 border-5 shadow ">
-        <div class="main-heading mb-10  rounded-top-3 border-5 shadow ">My Wishlist</div>
-        <div class="table-wishlist">
-          <table [cellPadding]="0" [cellSpacing]="0" [border]="0" [width]="100">
-            <thead>
-            <tr>
-              <th [width]="1"></th>
-              <th [width]="25">Product Name</th>
-              <th [width]="25">Unit Price</th>
-              <th [width]="25">Stock Status</th>
-              <th [width]="15"></th>
-              <th [width]="10"></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td [width]="45">
-                <div class="display-flex align-center">
-                  <div class="img-product">
-                    <img src="https://www.91-img.com/pictures/laptops/asus/asus-x552cl-sx019d-core-i3-3rd-gen-4-gb-500-gb-dos-1-gb-61721-large-1.jpg" alt="" class="mCS_img_loaded">
+            <div class="row">
+              <div class="col-lg-12 px-5 py-4">
+
+                <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Your wishlist<span><span>&#x2764;</span>;</span></h3>
+
+                <div class="d-flex align-items-center mb-5">
+                  <div class="flex-shrink-0">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/13.webp"
+                         class="img-fluid" style="width: 250px;" alt="Samsung Galaxy M11 64GB">
                   </div>
-                  <div class="name-product">
-                    Apple iPad Mini
-                  </div>
-                </div>
-              </td>
-              <td [width]="15" class="price">$110.00</td>
-              <td [width]="15"><span class="in-stock-box">In Stock</span></td>
-              <td [width]="15"><button class="round-black-btn small-btn">Add to Cart</button></td>
-              <td [width]="10" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
-            </tr>
-            <tr>
-              <td [width]="45">
-                <div class="display-flex align-center">
-                  <div class="img-product">
-                    <img src="https://www.91-img.com/pictures/laptops/asus/asus-x552cl-sx019d-core-i3-3rd-gen-4-gb-500-gb-dos-1-gb-61721-large-1.jpg" alt="" class="mCS_img_loaded">
-                  </div>
-                  <div class="name-product">
-                    Apple iPad Mini
+                  <div class="flex-grow-1 ms-5">
+                    <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                    <h5 class="text-primary">Samsung Galaxy M11 64GB</h5>
+                    <h6 style="color: #020202;">Color: white</h6>
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold mb-0 me-5 pe-3">799$</p>
+                      <div class="def-number-input number-input safari_only">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus"></button>
+                        <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
+                               type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </td>
-              <td [width]="15" class="price">$110.00</td>
-              <td [width]="15"><span class="in-stock-box">In Stock</span></td>
-              <td [width]="15"><button class="round-black-btn small-btn">Add to Cart</button></td>
-              <td [width]="10" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
-            </tr>
-            <tr>
-              <td [width]="45">
-                <div class="display-flex align-center">
-                  <div class="img-product">
-                    <img src="https://www.91-img.com/pictures/laptops/asus/asus-x552cl-sx019d-core-i3-3rd-gen-4-gb-500-gb-dos-1-gb-61721-large-1.jpg" alt="" class="mCS_img_loaded">
+
+                <div class="d-flex align-items-center mb-5">
+                  <div class="flex-shrink-0">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/6.webp"
+                         class="img-fluid" style="width: 250px;" alt="Headphones Bose 35 II">
                   </div>
-                  <div class="name-product">
-                    Apple iPad Mini
+                  <div class="flex-grow-1 ms-5">
+                    <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                    <h5 class="text-primary">Headphones Bose 35 II</h5>
+                    <h6 style="color: #020202;">Color: </h6>
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold mb-0 me-5 pe-3">239$</p>
+                      <div class="def-number-input number-input safari_only">
+                        <button style="border: none" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus"></button>
+                        <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
+                               type="number">
+                        <button  style="border: none" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </td>
-              <td [width]="15" class="price">$110.00</td>
-              <td [width]="15"><span class="in-stock-box">In Stock</span></td>
-              <td [width]="15"><button class="round-black-btn small-btn">Add to Cart</button></td>
-              <td [width]="10" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
-            </tr>
-            </tbody>
-          </table>
+
+                <div class="d-flex align-items-center mb-5">
+                  <div class="flex-shrink-0">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/1.webp"
+                         class="img-fluid" style="width: 250px;" alt="iPad 9.7 6-gen WiFi 32GB">
+                  </div>
+                  <div class="flex-grow-1 ms-5">
+                    <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                    <h5 class="text-primary">iPad 9.7 6-gen WiFi 32GB</h5>
+                    <h6 style="color: #020202;">Color: rose pink</h6>
+                    <div class="d-flex align-items-center">
+                      <p class="fw-bold mb-0 me-5 pe-3">659$</p>
+                      <div class="def-number-input number-input safari_only">
+                        <button style="border: none" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus"></button>
+                        <input class="quantity fw-bold text-black" min="0" name="quantity" value="2"
+                               type="number">
+                        <button style="border: none" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="mb-4" style="height: 2px; background-color: #000102; opacity: 1;">
+                <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #ccd1d7;">
+                  <h5 class="fw-bold mb-0">Total:</h5>
+                  <h5 class="fw-bold mb-0">2261$</h5>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>

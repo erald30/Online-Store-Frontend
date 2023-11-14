@@ -93,6 +93,15 @@
   border: none;
 }
 
+.shopping-cart.def-number-input.number-input {
+  border: none;
+}
+
+.shopping-cart .def-number-input.number-input input[type=number] {
+  max-width: 2rem;
+  border: none;
+}
+
 .shopping-cart .def-number-input.number-input input[type=number].black-text,
 .shopping-cart .def-number-input.number-input input.btn.btn-link[type=number],
 .shopping-cart .def-number-input.number-input input.md-toast-close-button[type=number]:hover,
@@ -101,7 +110,7 @@
 }
 
 .shopping-cart .def-number-input.number-input button {
-  width: 1rem;
+
 }
 
 .shopping-cart .def-number-input.number-input button:before,
@@ -112,9 +121,13 @@
 .shopping-cart .def-number-input.number-input button.minus:before,
 .shopping-cart .def-number-input.number-input button.minus:after {
   background-color: #020202;
+  border: transparent;
+
 }
 
 .shopping-cart .def-number-input.number-input button.plus:before,
 .shopping-cart .def-number-input.number-input button.plus:after {
   background-color: #020202;
+
+
 }
