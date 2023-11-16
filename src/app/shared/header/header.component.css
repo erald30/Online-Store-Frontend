@@ -30,9 +30,9 @@ header {
 
 .search-bar input {
   width: 60%;
-  padding: 4px;
+  padding: 5px;
   border-radius: 50px 0 0 50px;
-  font-size: 12px;
+  font-size: 14px;
   border: 0 solid #546e8d;
   color: white;
   background-color: #546e8d;
@@ -40,12 +40,13 @@ header {
 }
 
 .search-bar button {
-  padding: 4px 12px;
-  background-color: #415372;
-  border: 0 solid #546e8d;
+  display: flex;
+  padding: 15px 12px;
+  background-color: #2e4f73;
+  border: 0 solid #224672;
   border-radius: 0 50px 50px 0;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .actions {
