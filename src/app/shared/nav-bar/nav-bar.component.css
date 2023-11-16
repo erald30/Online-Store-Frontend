@@ -44,8 +44,9 @@
   position: absolute;
   font-style: normal;
   font-size: 13px;
-  background-color: #a1c2f1;
-  border: 1px solid #07234f;
+  background-color: #c2cdde;
+  border-radius: 15px;
+  border: 2px #343a40;
   font-weight: bold;
   z-index: 1;
   padding-right: 40px;
