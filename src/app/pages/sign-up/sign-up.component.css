@@ -1,5 +1,3 @@
-
-
 .background {
   font-style: normal;
   background-color: #aec8de !important;
@@ -34,4 +32,8 @@ input {
 
 .btn-outline-dark{
   --bs-btn-hover-bg: #415372FF;
+}
+
+.row{
+  margin-left: 0;
 }
