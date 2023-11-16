@@ -6,23 +6,28 @@
   background-color:#c5d6e8 ;
   color: #020202;
   border-radius: 3px;
-  border-bottom: 15px solid #eee
+  box-shadow: -3px -3px 5px rgb(97, 114, 141), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+
 
 }
 
 .processor {
   background-color: #c5d6e8;
   margin-top: 5px;
-  border-bottom: 15px solid #eee
+  box-shadow: -3px -3px 5px rgb(97, 114, 141), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+
 }
 
 .brand {
   background-color: #c5d6e8;
-  border-bottom: 15px solid #eee
+  box-shadow: -3px -3px 5px rgb(97, 114, 141), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+  justify-content: space-between;
 }
 
 .type {
-  background-color: #c5d6e8
+  background-color: #c5d6e8;
+  box-shadow: -3px -3px 5px rgb(97, 114, 141), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+
 }
 
 .product {
