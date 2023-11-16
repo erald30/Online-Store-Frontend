@@ -20,6 +20,7 @@ export class ProductService {
   constructor(private httpClient: HttpClient) { }
 
   doSearch(query?: string, category?: string): Observable<Product[]> {
+
     //let finalQuery = query ?  query : '';
     //let finalQuery = query ?? '';
 

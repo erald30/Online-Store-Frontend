@@ -1,87 +1,161 @@
-
-.card {
-  max-width: 90%;
-  max-height: 90px;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  background-color: transparent;
-  transform: translate(8%,-8%);
-
+.container-fluid {
+  background-color: #f0f3f6
 }
 
-.card-img-top {
-  max-width: 100%;
-  height: 150px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-
-}
-
-
-.card-body {
-  padding: 30px;
-  background-color: #aeb3d3;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-
-}
-
-.col{
-  font-style: italic;
-  color: #070707;
-}
-.card-text {
-  border-color: #a6bce7;
-  font-size: 20px;
-  color: #ffffff;
-  font-style: normal;
-
-}
-
-
-.card-body p {
-  text-align: center;
-  padding-bottom: 40px;
-
-}
-
-
-.card-body ul, .card-body ol {
-  list-style: none;
+.product {
   padding: 10px;
-
-}
-.card{
+  box-shadow: -5px -5px 10px rgb(97, 114, 141), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+  border-radius: 15px;
   position: relative;
-  /*left: 0;*/
-  /*width: 110px;*/
-  /*height: 160px;*/
-  /*background-color: transparent;*/
-  /*border-radius: 8px;*/
-  transition: .5s ease-in-out;
-  /*overflow: hidden;*/
-  /*box-shadow: 0 5px 12px rgba(0,0,0,0.5);*/
-
 }
 
-.card:not(:first-child){
-  margin-top: 10px;
+.about span {
+  color: #020202;
+  font-size: 16px
 }
 
-.card:hover{
-  transform: translate3d(10%, 5%, -10px);
-  transform-origin: center;
-  font-weight: bold;
-  cursor: col-resize;
+.cart-button button {
+  font-size: 12px;
+  color: #fff;
+  background-color: #4578ab;
+  height: 38px
 }
-.card:hover ~ .card{
-  top: 10px;
 
+.cart-button button:focus,
+button:active {
+  font-size: 12px;
+  color: #fff;
+  background-color: #3c5472;
+  box-shadow: none
 }
-.card-img{
-  height: 160px;
-  object-fit: cover;
-  border-radius: 4px;
+
+.product_fav i {
+  line-height: 40px;
+  color: #3f5877;
+  font-size: 15px
 }
+
+.product_fav {
+  display: inline-block;
+  width: 36px;
+  height: 39px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 11%;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 3px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease
+}
+
+.product_fav:hover {
+  background: #3f5877;
+}
+
+.product_fav:hover i {
+  color: #fff
+}
+
+.about {
+  margin-top: 12px
+}
+
+.off {
+  position: absolute;
+  left: 65%;
+  top: 6%;
+  width: 80px;
+  text-align: center;
+  height: 30px;
+  line-height: 8px;
+  border-radius: 5px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #020202
+}
+
+.h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #202d3d;
+}
+
+.pagination-outer{ text-align: center; }
+.pagination{
+  font-family: 'Ubuntu', sans-serif;
+  display: inline-flex;
+  position: relative;
+}
+.pagination li a.page-link{
+  color: #333;
+  background-color: #e7e7e7;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 39px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+}
+.pagination li a.page-link:hover,
+.pagination li a.page-link:focus,
+.pagination li.active a.page-link:hover,
+.pagination li.active a.page-link{
+  color: #fff;
+  background: transparent;
+}
+.pagination li a.page-link:before,
+.pagination li a.page-link:after{
+  content: '';
+  background: linear-gradient(to right, #2869b6 50%, transparent 50%);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.4s ease 0s;
+}
+.pagination li a.page-link:after{
+  background: linear-gradient(to right, #1e4f93 50%, transparent 50%);
+  transform: rotateY(180deg);
+  top: auto;
+  bottom: 0;
+}
+.pagination li a.page-link:hover:before,
+.pagination li a.page-link:focus:before,
+.pagination li.active a.page-link:before,
+.pagination li a.page-link:hover:after,
+.pagination li a.page-link:focus:after,
+.pagination li.active a.page-link:after{
+  height: 85%;
+  opacity: 1;
+}
+@media only screen and (max-width: 480px){
+  .pagination{
+    font-size: 0;
+    border: none;
+    display: inline-block;
+  }
+  .pagination li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 10px;
+  }
+}
+
 
