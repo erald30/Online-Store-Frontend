@@ -1,106 +1,7 @@
 <div class="container-fluid ">
   <div class="row g-2">
     <div class="col-md-3">
-      <div class="t-products p-2 mt-5"><h6 class="text-uppercase">Computer & Periferals</h6>
-        <div class="p-lists">
-          <div class="d-flex justify-content-between mt-2"><span>Laptops</span> <span>23</span></div>
-          <div class="d-flex justify-content-between mt-2"><span>Desktops</span> <span>46</span></div>
-          <div class="d-flex justify-content-between mt-2"><span>Monitors</span> <span>13</span></div>
-          <div class="d-flex justify-content-between mt-2"><span>Mouse</span> <span>33</span></div>
-          <div class="d-flex justify-content-between mt-2"><span>Keyboard</span> <span>12</span></div>
-          <div class="d-flex justify-content-between mt-2"><span>Printer</span> <span>53</span></div>
-          <div class="d-flex justify-content-between mt-2"><span>Mobiles</span> <span>203</span></div>
-          <div class="d-flex justify-content-between mt-2"><span>CPU</span> <span>23</span></div>
-        </div>
-      </div>
-      <br>
-      <div class="processor p-2">
-        <div class="heading d-flex justify-content-between align-items-center"><h6 class="text-uppercase">Processor</h6>
-          <span>--</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="1"> <label
-            class="form-check-label" for="1"> Intel Core i7 </label></div>
-          <span>3</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="2"
-                                         checked> <label class="form-check-label" for="2"> Intel Core
-            i6 </label></div>
-          <span>4</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="3"
-                                         checked> <label class="form-check-label" for="3"> Intel Core
-            i3 </label></div>
-          <span>14</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="4"
-                                         checked> <label class="form-check-label" for="4"> Intel
-            Centron </label></div>
-          <span>8</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="5"
-                                         checked> <label class="form-check-label" for="5"> Intel
-            Pentinum </label></div>
-          <span>14</span></div>
-      </div>
-      <br>
-      <div class="brand p-2">
-        <div class="heading d-flex justify-content-between align-items-center"><h6 class="text-uppercase">Brand</h6>
-          <span>--</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="6"> <label
-            class="form-check-label" for="6"> Apple </label></div>
-          <span>13</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="7"
-                                         checked> <label class="form-check-label" for="7"> Asus </label>
-          </div>
-          <span>4</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="8"
-                                         checked> <label class="form-check-label" for="8"> Dell </label>
-          </div>
-          <span>24</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="9"
-                                         checked> <label class="form-check-label" for="9">
-            Lenovo </label></div>
-          <span>18</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="10"
-                                         checked> <label class="form-check-label" for="10"> Acer </label>
-          </div>
-          <span>44</span></div>
-      </div>
-      <br>
-      <div class="type p-2 mb-2">
-        <div class="heading d-flex justify-content-between align-items-center"><h6 class="text-uppercase">Type</h6>
-          <span>--</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="11"> <label
-            class="form-check-label" for="11"> Hybrid </label></div>
-          <span>23</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="12"
-                                         checked> <label class="form-check-label" for="12">
-            Laptop </label></div>
-          <span>24</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="13"
-                                         checked> <label class="form-check-label" for="13">
-            Desktop </label></div>
-          <span>14</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="14"
-                                         checked> <label class="form-check-label" for="14"> Touch </label>
-          </div>
-          <span>28</span></div>
-        <div class="d-flex justify-content-between mt-2">
-          <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="15"
-                                         checked> <label class="form-check-label" for="15">
-            Tablets </label></div>
-          <span>44</span></div>
-      </div>
-
+      <app-filter></app-filter>
     </div>
     <div class="col-md-9 p-5 ">
       <div class="row g-5">
@@ -200,4 +101,25 @@
     </div>
   </div>
   <br>
+  <div class="demo">
+    <nav class="pagination-outer" aria-label="Page navigation">
+      <ul class="pagination">
+        <li class="page-item">
+          <a href="#" class="page-link" aria-label="Previous">
+            <span aria-hidden="true">«</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item active"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a href="#" class="page-link" aria-label="Next">
+            <span aria-hidden="true">»</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>

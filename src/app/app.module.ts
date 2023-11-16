@@ -23,6 +23,7 @@ import {FormsModule} from "@angular/forms";
 import { NewproductsComponent } from './pages/homepage/newproducts/newproducts.component';
 import { MostsoldproductsComponent } from './pages/homepage/mostsoldproducts/mostsoldproducts.component';
 import {HttpClientModule} from "@angular/common/http";
+import { FilterComponent } from './pages/products/filter/filter.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import {HttpClientModule} from "@angular/common/http";
     HomesliderComponent,
     NewproductsComponent,
     MostsoldproductsComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,
