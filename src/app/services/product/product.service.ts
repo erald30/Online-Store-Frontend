@@ -31,4 +31,8 @@ export class ProductService {
 
     return this.httpClient.get<Product[]>(environment.apiUrl + "products/search?query=" + (query ?? '') + "&category="+ (category ?? ''));
   }
+
+  getNewestProducts(): Observable<Product[]>{
+    return this.httpClient.get<Product[]>(environment.apiUrl + "products/new-products");
+  }
 }

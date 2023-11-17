@@ -1,17 +1,27 @@
-.container-fluid {
-  background-color: #f0f3f6
+.product-container-nw-pr{
+  background-color: #a29696;
+}
+
+.product-container-pr{
+  background-color: blue;
+}
+
+.product-container{
+  border-radius: 10px;
 }
 
 .product {
   padding: 10px;
-  box-shadow: -5px -5px 10px rgb(97, 114, 141), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
-  border-radius: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
   position: relative;
+  height: 100%;
 }
+
 
 .about span {
   color: #020202;
-  font-size: 16px
+  font-size: 14px
 }
 
 .cart-button button {
@@ -68,7 +78,7 @@ button:active {
   position: absolute;
   left: 65%;
   top: 6%;
-  width: 80px;
+  width: 100px;
   text-align: center;
   height: 30px;
   line-height: 8px;
@@ -157,5 +167,6 @@ button:active {
     margin: 0 0 10px;
   }
 }
+
 
 

@@ -1,13 +1,11 @@
-<div class="container-fluid new-products-container">
-  <div class="inner-container">
-    <div class="row px-4">
-    <h1 >Newest products!  </h1>
-    <app-product class="col-md-3"></app-product>
-    <app-product class="col-md-3"></app-product>
-    <app-product class="col-md-3 "></app-product>
-    <app-product class="col-md-3 "></app-product>
+<div class="container-fluid new-products-container" *ngIf="newProducts">
+  <div class="inner-container d-block h-auto">
+    <h1>Newest products! </h1>
+    <div class="row row-cols-4 px-4">
+      <div class="col" *ngFor="let product of newProducts">
+        <app-product [bgColor]="'red'" [productData]="product"></app-product>
+      </div>
+    </div>
   </div>
-
-</div>
 </div>
 
