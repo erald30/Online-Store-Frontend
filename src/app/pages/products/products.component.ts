@@ -1,7 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Product} from "../../models/product";
 import {ProductService} from "../../services/product/product.service";
-import {query} from "@angular/animations";
 import {Observable, Subscription, take} from "rxjs";
 import {ActivatedRoute, Route, Router} from "@angular/router";
 

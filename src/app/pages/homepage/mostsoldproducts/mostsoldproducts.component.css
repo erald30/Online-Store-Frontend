@@ -1,4 +1,4 @@
-.most-sold-products{
+.new-products-container{
   height: 100vh;
   background-color: #546e8d;
   display: flex;
@@ -22,12 +22,12 @@ h1{
 }
 
 .inner-container{
+  background-color: #a5b4c5;
   height: 80%;
   width: 95%;
   box-shadow: 5px 5px 20px rgba(0, 0, 0.5, 0.8);
-  border-radius: 70px 0;
-  margin-bottom: 40px;
-
+  border-radius: 0 70px;
+  margin-top: 40px;
 }
 
 body {
@@ -77,5 +77,15 @@ body {
   color: #007bff;
   text-decoration: none;
 }
+
+.div.row.px-4{
+  background-color: #001f47;
+}
+
+
+
+
+
+
 
 

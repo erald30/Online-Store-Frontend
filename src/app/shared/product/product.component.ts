@@ -10,4 +10,5 @@ export class ProductComponent {
  @Input() bgColor! : string;
 
  @Input() productData! : Product;
+
 }

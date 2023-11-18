@@ -58,4 +58,8 @@ export class ProductService {
   getCategory() {
     return this.filter.category;
   }
+
+  getMostSoldProducts() :Observable<Product[]> {
+    return this.httpClient.get<Product[]>(environment.apiUrl + "products/most-sold-products");
+  }
 }
