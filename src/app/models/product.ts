@@ -6,5 +6,6 @@ export interface Product {
   onSale? : boolean;
   discountPrice? : number;
   productImage1? : string;
+  quantity? : number;
 
 }
