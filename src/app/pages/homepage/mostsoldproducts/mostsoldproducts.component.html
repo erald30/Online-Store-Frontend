@@ -3,7 +3,7 @@
     <h1>Most sold products! </h1>
     <div class="row row-cols-4 px-4">
       <div class="col" *ngFor="let product of mostSoldProducts">
-        <app-product [bgColor]="'red'" [productData]="product"></app-product>
+        <app-product [productData]="product"></app-product>
       </div>
     </div>
   </div>

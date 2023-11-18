@@ -17,12 +17,15 @@ h1{
   align-items: center;
   padding-top: 20px;
   background-color:transparent;
+  text-shadow: 0 0 15px white;
+  font-weight: bold;
+  padding-bottom: 20px;
 
 
 }
 
 .inner-container{
-  background-color: #a5b4c5;
+  background-color: #546e8d;
   height: 80%;
   width: 95%;
   box-shadow: 5px 5px 20px rgba(0, 0, 0.5, 0.8);
@@ -43,6 +46,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
+
 }
 
 .card {
