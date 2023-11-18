@@ -1,6 +1,6 @@
-.most-products-container{
+.container-fluid{
   height: 100vh;
-  background-color: #546e8d;
+  background-color: #7995b0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,11 +25,11 @@ h1{
 }
 
 .inner-container{
-  background-color: #546e8d;
+  background-color: #576c8c;
   height: 80%;
   width: 95%;
   box-shadow: 5px 5px 20px rgba(0, 0, 0.5, 0.8);
-  border-radius: 0 70px;
+  border-radius: 10px;
   margin-top: 40px;
 }
 
@@ -37,7 +37,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #546E8DFF;
 }
 
 .card-container {
