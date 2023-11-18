@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {CategoryService} from "../../services/category/category.service";
 import {Category} from "../../models/category";
+import {ProductService} from "../../services/product/product.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,7 +12,7 @@ import {Category} from "../../models/category";
 export class NavBarComponent implements OnInit{
   categories:Category[] = [];
 
-  constructor(private categoryService: CategoryService) {
+  constructor(private router: Router, private categoryService: CategoryService, private productService: ProductService) {
   }
 
   ngOnInit(): void {
@@ -26,4 +28,8 @@ export class NavBarComponent implements OnInit{
     })
   }
 
+  filterByCategory(title: string | undefined) {
+    this.router.navigateByUrl("/products")
+      .finally(() =>  this.productService.setCategory(title));
+  }
 }

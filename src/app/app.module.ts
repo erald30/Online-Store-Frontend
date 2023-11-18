@@ -24,6 +24,7 @@ import { NewproductsComponent } from './pages/homepage/newproducts/newproducts.c
 import { MostsoldproductsComponent } from './pages/homepage/mostsoldproducts/mostsoldproducts.component';
 import {HttpClientModule} from "@angular/common/http";
 import { FilterComponent } from './pages/products/filter/filter.component';
+import {AlertModule} from "ngx-bootstrap/alert";
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { FilterComponent } from './pages/products/filter/filter.component';
     FilterComponent,
   ],
   imports: [
+    AlertModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     RouterOutlet,

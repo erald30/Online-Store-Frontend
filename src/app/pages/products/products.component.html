@@ -1,43 +1,28 @@
-<div class="container-fluid ">
-  <div class="inner-container row g-2">
-    <div class="col-md-3">
-      <app-filter></app-filter>
-    </div>
-    <div class="col-md-9 p-5 ">
-      <div class="row row-cols-3 g-5 ">
-        <app-product [bgColor]="'blue'"></app-product>
-        <app-product [bgColor]="'blue'"></app-product>
-        <app-product [bgColor]="'blue'"></app-product>
-        <app-product [bgColor]="'blue'"></app-product>
-        <app-product [bgColor]="'blue'"></app-product>
-        <app-product [bgColor]="'blue'"></app-product>
-        <app-product [bgColor]="'blue'"></app-product>
-        <app-product [bgColor]="'blue'"></app-product>
-        <app-product [bgColor]="'blue'"></app-product>
-    </div>
+<div class="container-fluid row">
+  <div class="col-12 py-2 d-grid justify-content-center" *ngIf="category">
+    <span class="badge d-flex align-items-center badge-warning bg-warning" >Selected category: {{category}}
+    <button type="button" class="ms-2 btn-close d-block" aria-label="Close" (click)="clearCategory()"></button>
+    </span>
   </div>
-  <br>
-  <div class="demo">
-    <nav class="pagination-outer" aria-label="Page navigation">
-      <ul class="pagination">
-        <li class="page-item">
-          <a href="#" class="page-link" aria-label="Previous">
-            <span aria-hidden="true">«</span>
-          </a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item active"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">4</a></li>
-        <li class="page-item"><a class="page-link" href="#">5</a></li>
-        <li class="page-item">
-          <a href="#" class="page-link" aria-label="Next">
-            <span aria-hidden="true">»</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <div class="col-12 col-md-3">
+    <app-filter></app-filter>
   </div>
+  <div class="col-12 col-md-9">
+      <div class="row container-fluid">
+        <div class="col-12 my-5" *ngIf="items && items.length > 0">
+          <div class="row">
+              <div class="col-4 py-2" *ngFor="let product of items">
+                <app-product [productData]="product" [bgColor]="'blue'"></app-product>
+              </div>
+          </div>
+
+        </div>
+        <div class="col-12 my-5" *ngIf="!items || items.length == 0">
+          <div class="alert alert-warning" role="alert">
+            There are no products to show!
+          </div>
+        </div>
+      </div>
   </div>
-  </div>
+</div>
 

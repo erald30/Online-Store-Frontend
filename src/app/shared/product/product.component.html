@@ -1,11 +1,10 @@
-<div class="product-container  "
-     [ngClass]="{'product-container-nw-pr': bgColor === 'red', 'product-container-pr': bgColor === 'blue'}">
+<div class="product-container" *ngIf="productData" [ngClass]="{'product-container-nw-pr': bgColor === 'red', 'product-container-pr': bgColor === 'blue'}">
   <div class="product py-4">
     <span class="off bg-success" *ngIf="productData.onSale">On Discount</span>
     <div class="text-center">
       <img src="{{productData.productImage1}}" width="150"></div>
     <div class="about text-center">
-      <h6>{{productData.title}}</h6>
+      <h6 class="text-truncate">{{productData.title}}</h6>
       <span *ngIf="productData.onSale"><del>${{productData.price}}</del> - ${{productData.discountPrice}}</span>
       <span *ngIf="!productData.onSale">${{productData.price}}</span>
     </div>

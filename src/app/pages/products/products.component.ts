@@ -16,36 +16,27 @@ export class ProductsComponent implements OnInit, OnDestroy{
   categorySubscription?: Subscription;
   category?: string;
 
-  constructor(private productService: ProductService, private router: ActivatedRoute) {
+  constructor(private productService: ProductService, private router: ActivatedRoute, private route: Router) {
   }
 
   ngOnInit(): void {
     this.items = [];
 
-    this.category = undefined;
-    this.categorySubscription = this.router.params.subscribe( params => {
-      this.category = params["category"];
-      if (this.category)
-        this.search('', this.category);
-      else
-        this.search('', '');
-    });
-
-    this.category = this.router?.snapshot?.paramMap?.get('category') ?? '';
+    this.category = this.productService.getCategory();
 
     if (this.searchBoxSubscription)
       this.searchBoxSubscription.unsubscribe();
 
-    this.productService.searchSubscribe$.subscribe({
+    this.searchBoxSubscription = this.productService.searchSubscribe$.subscribe({
       next: query => {
-        console.info("ProductComponent: User searched: ", query);
-        this.search(query, this.category ?? '');
+        this.search();
+        this.category = this.productService.getCategory();
       }
     })
   }
 
-  search(query: string, category: string) {
-    this.searchBoxSubscription = this.productService.doSearch(query, category).subscribe({
+  search() {
+    this.productService.doSearch().subscribe({
       next: items => {
         this.items = items;
         console.info("success result", items);
@@ -65,5 +56,9 @@ export class ProductsComponent implements OnInit, OnDestroy{
       this.categorySubscription.unsubscribe()
       this.categorySubscription = undefined;
     }
+  }
+
+  clearCategory() {
+    this.productService.setCategory(undefined);
   }
 }

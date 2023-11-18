@@ -14,7 +14,7 @@
           <div class="dropdown">
             <button class="dropbtn buton">Categories</button>
             <div class="dropdown-content">
-              <a *ngFor="let category of categories" [routerLink]="'/products/' + category.title">{{category?.title}}</a>
+              <a href="javascript: void(0)" *ngFor="let category of categories" (click)="filterByCategory(category.title)">{{category?.title}}</a>
             </div>
           </div>
         </div>
