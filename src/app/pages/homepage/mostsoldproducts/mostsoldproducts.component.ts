@@ -20,7 +20,7 @@ export class MostsoldproductsComponent implements OnInit{
         this.mostSoldProducts = items;
       },
       error: err => {
-        console.error(err);
+        console.error (err) ;
       }
     })
   }
