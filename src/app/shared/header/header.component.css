@@ -19,7 +19,7 @@ header {
 
 .search-bar {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: center;
   flex-grow: 1;
 }
@@ -65,8 +65,8 @@ header {
   padding: 3px 6px;
   border-radius: 4px;
   background-color: #415372;
-  color: #fff;
-  border: 1px solid #ffffff;
+  color: #fff;  border: 1px solid #ffffff;
+
   cursor: pointer;
   font-size: 12px;
 }
@@ -82,6 +82,7 @@ header {
 
   .search-bar input {
     width: 100%;
+
   }
 
   .search-bar button {

@@ -12,6 +12,7 @@ export class NewproductsComponent implements OnInit{
 
   constructor(private productService: ProductService) {
   }
+
   ngOnInit(): void {
     this.productService.getNewestProducts().subscribe({
       next: items => {
