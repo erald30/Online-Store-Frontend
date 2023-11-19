@@ -12,7 +12,6 @@ import {switchMap} from "rxjs";
 export class ProductDetailsComponent implements OnInit{
 
   product? : Product;
-
   constructor(private productService :ProductService, private router : ActivatedRoute) {
   }
 

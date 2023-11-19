@@ -1,12 +1,9 @@
-main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 30px;
+.detail-content {
   background-color: #6f8ca9;
   box-shadow: -10px -10px 15px rgb(65, 83, 114), 5px 5px 5px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(2, 2, 2, 0), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
   border-radius: 25px;
 }
-body{
+.detail-background {
   margin: 0;
   background-color: #aac2d5;
 }
