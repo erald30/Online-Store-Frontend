@@ -1,20 +1,20 @@
 <div class="row container-fluid py-5">
   <div class="col-12 col-md-6 offset-3">
     <div *ngIf="product" class="detail-content detail-background w-100 p-5">
-      <h2>{{product?.title}}</h2>
+      <h2>{{product.title}}</h2>
       <div class="product-photos w-100 h-100 ">
         <div class="banner-image" >
-          <img src="{{product?.bannerImage}}">
+          <img src="{{product.bannerImage}}">
         </div>
       </div>
       <div class="small-photos w-100 h-100 ">
-        <img src="{{product?.productImage1}}">
-        <img src="{{product?.productImage2}}">
-        <img src="{{product?.productImage3}}">
+        <img src="{{product.productImage1}}">
+        <img src="{{product.productImage2}}">
+        <img src="{{product.productImage3}}">
       </div>
 
       <div class="product-info">
-        <p class="price">{{product?.price}}L</p>
+        <p class="price">{{product.price}}L</p>
 
 
         <div class="rate">
@@ -24,7 +24,7 @@
 
         <div class="description">
           <h3>Description</h3>
-          <p>{{product?.description}}</p>
+          <p>{{product.description}}</p>
         </div>
       </div>
       <div class="buttons">

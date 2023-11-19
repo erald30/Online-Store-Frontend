@@ -22,9 +22,10 @@ import {CarouselModule} from "ngx-bootstrap/carousel";
 import {FormsModule} from "@angular/forms";
 import { NewproductsComponent } from './pages/homepage/newproducts/newproducts.component';
 import { MostsoldproductsComponent } from './pages/homepage/mostsoldproducts/mostsoldproducts.component';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { FilterComponent } from './pages/products/filter/filter.component';
 import {AlertModule} from "ngx-bootstrap/alert";
+import {AuthInterceptor} from "./interceptors/auth.interceptor";
 
 
 @NgModule({
@@ -58,7 +59,13 @@ import {AlertModule} from "ngx-bootstrap/alert";
     RouterLink,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

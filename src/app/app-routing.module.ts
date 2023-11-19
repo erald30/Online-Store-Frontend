@@ -10,12 +10,13 @@ import {ProductDetailsComponent} from "./pages/product-details/product-details.c
 import {ProductsComponent} from "./pages/products/products.component";
 import {SignUpComponent} from "./pages/sign-up/sign-up.component";
 import {WishlistComponent} from "./pages/wishlist/wishlist.component";
+import {loginGuard} from "./guard/login.guard";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home-page', pathMatch: 'full'},
   {path: 'home-page', component:HomepageComponent},
   {path: 'about-us', component:AboutUsComponent},
-  {path: 'cart', component: CartComponent},
+  {path: 'cart', component: CartComponent, canActivate:[loginGuard]},
   {path: 'wishlist', component: WishlistComponent},
   {path: 'login', component: LoginComponent},
   {path: 'payment', component: PaymentComponent},

@@ -9,22 +9,25 @@
             <h4 class="mt-1 mb-5 pb-1">Welcome</h4>
           </div>
 
-          <form>
-            <div class="form-outline mb-4">
-              <label class="form-label" for="email-input">Username</label>
-              <input type="email" id="email-input" class="form-control"
-                     placeholder="Please insert your email" />
-            </div>
+          <div *ngIf="message" class="alert alert-warning py-3" role="alert">
+            {{message}}
+          </div>
 
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form2Example22">Password</label>
-              <input type="password" id="form2Example22" placeholder="Please insert your password" class="form-control" />
-            </div>
+          <div class="form-outline mb-4">
+            <label class="form-label" for="email-input">Username</label>
+            <input type="email" id="email-input" class="form-control"
+                   [(ngModel)]="user.username"
+                   placeholder="Please insert your email" />
+          </div>
 
-            <div class="text-center pt-1 mb-5 pb-1">
-              <button class="btn btn-outline-dark btn-lg" type="button">Sign in</button>
-            </div>
-          </form>
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example22">Password</label>
+            <input type="password" id="form2Example22" [(ngModel)]="user.password" placeholder="Please insert your password" class="form-control" />
+          </div>
+
+          <div class="text-center pt-1 mb-5 pb-1">
+            <button [disabled]="loading" (click)="signIn()" class="btn btn-outline-dark btn-lg"  type="button">Sign in</button>
+          </div>
 
         </div>
       </div>

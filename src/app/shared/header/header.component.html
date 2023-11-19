@@ -20,7 +20,10 @@
         </a>
       </div>
       <div class="log-in">
-        <a routerLink="/login">
+        <div *ngIf="user?.token" class="text-white" style="cursor: pointer" (click)="logout()" >
+          Welcome {{user?.firstName}} {{user?.lastName}} <i class="fa-solid fa-arrow-right-from-bracket fa-xl" style="color: #f7f7f8;"></i>
+        </div>
+        <a routerLink="/login" *ngIf="!user?.token">
           <i class="fa-solid fa-right-to-bracket fa-xl" style="color: #f7f7f8;"></i>
         </a>
       </div>
