@@ -1,20 +1,20 @@
 <body>
 <br>
 <main>
-  <h2>Product Name</h2>
-  <div>
-  <div class="product-photos">
-    <img class="large-photo" src="assets/img/tv1.jpg" alt="Product Image 1">
+  <h2>{{product?.title}}</h2>
+  <div class="product-photos w-100 h-100 ">
+    <div class="banner-image ">
+    <img src="{{product?.bannerImage}}">
+    </div>
   </div>
   <div class="small-photos w-100 h-100 ">
-    <img src="assets/img/tv2.jpg" alt="Product Image 2">
-    <img src="assets/img/tv2.jpg" alt="Product Image 3">
-    <img src="assets/img/tv2.webp" alt="Product Image 4">
-  </div>
+    <img src="{{product?.productImage1}}">
+    <img src="{{product?.productImage2}}">
+    <img src="{{product?.productImage3}}">
   </div>
 
   <div class="product-info">
-    <p class="price">$99.99</p>
+    <p class="price">{{product?.price}}L</p>
 
 
     <div class="rate">
@@ -24,7 +24,7 @@
 
     <div class="description">
       <h3>Description</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et fringilla libero.</p>
+      <p>{{product?.description}}</p>
     </div>
   </div>
   <div class="buttons">

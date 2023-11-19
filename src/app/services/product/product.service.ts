@@ -62,4 +62,8 @@ export class ProductService {
   getMostSoldProducts() :Observable<Product[]> {
     return this.httpClient.get<Product[]>(environment.apiUrl + "products/most-sold-products");
   }
+
+  getProductById(id: string) : Observable<Product>{
+    return this.httpClient.get<Product>(environment.apiUrl + "products/product-details/" + id);
+  }
 }

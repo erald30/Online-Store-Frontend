@@ -5,8 +5,8 @@
       <img src="{{productData.productImage1}}" width="150"></div>
     <div class="about text-center">
       <h6 class="text-truncate">{{productData.title}}</h6>
-      <span *ngIf="productData.onSale"><del>${{productData.price}}</del> - ${{productData.discountPrice}}</span>
-      <span *ngIf="!productData.onSale">${{productData.price}}</span>
+      <span *ngIf="productData.onSale"><del>{{productData.price}}L</del> - {{productData.discountPrice}}L</span>
+      <span *ngIf="!productData.onSale">{{productData.price}}L</span>
     </div>
     <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center">
       <button class="btn btn-primary text-uppercase">Add to cart</button>
