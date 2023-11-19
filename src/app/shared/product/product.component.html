@@ -4,7 +4,7 @@
     <div class="text-center">
       <img src="{{productData.productImage1}}" width="150"></div>
     <div class="about text-center">
-      <h6 class="text-truncate">{{productData.title}}</h6>
+      <h6 class="text-truncate"><a [routerLink]="'/product-details/' + productData.id">{{productData.title}}</a></h6>
       <span *ngIf="productData.onSale"><del>{{productData.price}}L</del> - {{productData.discountPrice}}L</span>
       <span *ngIf="!productData.onSale">{{productData.price}}L</span>
     </div>
